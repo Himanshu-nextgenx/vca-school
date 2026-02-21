@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { FaWhatsapp } from 'react-icons/fa';
 
 // 👇 Replace with the school's actual WhatsApp number (with country code, no +/spaces)
-const WHATSAPP_NUMBER = '917597607080';
+const WHATSAPP_NUMBER = '919983072100';
 const DEFAULT_MESSAGE = 'Hello! I would like to know more about Virat Children Academy.';
 
 export default function WhatsAppButton() {
