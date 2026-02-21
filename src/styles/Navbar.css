@@ -1,0 +1,216 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: transparent;
+    transition: all 0.4s ease;
+}
+
+.navbar.scrolled {
+    background: var(--white);
+    box-shadow: 0 2px 20px rgba(26, 60, 110, 0.12);
+}
+
+.navbar.scrolled .nav-logo-text h2 {
+    color: var(--primary);
+}
+
+.navbar.scrolled .nav-logo-text span {
+    color: var(--text-light);
+}
+
+.navbar.scrolled .nav-link {
+    color: var(--text);
+}
+
+.navbar.scrolled .nav-link:hover {
+    color: var(--primary);
+}
+
+.navbar-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+}
+
+.nav-logo-icon {
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(135deg, var(--primary), var(--primary-light));
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.nav-logo-text h2 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--white);
+    line-height: 1.2;
+    transition: var(--transition);
+}
+
+.nav-logo-text span {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 400;
+    display: block;
+    transition: var(--transition);
+}
+
+.navbar.scrolled .nav-logo-text span {
+    color: var(--text-light);
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.nav-link {
+    padding: 8px 14px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.9);
+    border-radius: var(--radius-sm);
+    transition: var(--transition);
+    position: relative;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--white);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.navbar.scrolled .nav-link:hover,
+.navbar.scrolled .nav-link.active {
+    color: var(--primary);
+    background: rgba(26, 60, 110, 0.08);
+}
+
+.nav-cta {
+    background: var(--accent) !important;
+    color: var(--white) !important;
+    padding: 8px 18px;
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(200, 16, 46, 0.3);
+}
+
+.nav-cta:hover {
+    background: var(--accent-light) !important;
+    transform: translateY(-2px);
+}
+
+/* Hamburger */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 8px;
+    transition: var(--transition);
+}
+
+.hamburger span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--white);
+    border-radius: 2px;
+    transition: var(--transition);
+}
+
+.navbar.scrolled .hamburger span {
+    background: var(--primary);
+}
+
+.hamburger.open span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.hamburger.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Mobile menu */
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--white);
+    box-shadow: 0 8px 30px rgba(26, 60, 110, 0.15);
+    padding: 16px 20px 24px;
+    border-top: 3px solid var(--primary);
+}
+
+.mobile-menu.open {
+    display: block;
+}
+
+.mobile-menu .nav-link {
+    display: block;
+    color: var(--text);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-bottom: 4px;
+    font-size: 0.95rem;
+}
+
+.mobile-menu .nav-link:hover,
+.mobile-menu .nav-link.active {
+    color: var(--primary);
+    background: rgba(26, 60, 110, 0.08);
+}
+
+.mobile-menu .nav-cta {
+    display: block;
+    text-align: center;
+    margin-top: 12px;
+    padding: 12px 16px;
+    color: var(--white) !important;
+    background: var(--accent) !important;
+}
+
+@media (max-width: 900px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    .mobile-menu.open {
+        display: block;
+    }
+}
