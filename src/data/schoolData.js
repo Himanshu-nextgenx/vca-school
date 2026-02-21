@@ -9,7 +9,7 @@ export const schoolInfo = {
     streams: ["Arts", "Science"],
     phones: ["95711-33669", "95717-33669"],
     instagram: "v_c_a_kuchaman_city",
-    email: "vca.kuchamancity@gmail.com",
+    email: "vcaschool21@gmail.com",
     address: "Narayanpura, Railway Station Road, Kuchaman City, Rajasthan",
     mapSrc:
         "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3568.4!2d74.8!3d27.15!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjfCsDA5JzAwLjAiTiA3NMKwNDgnMDAuMCJF!5e0!3m2!1sen!2sin!4v1650000000000!5m2!1sen!2sin",
@@ -40,12 +40,12 @@ export const deskMessages = [
     {
         id: 2,
         designation: "Director",
-        name: "Sh. Suresh Sharma Ji",
+        name: "Commando Virat Choudhary",
         icon: "🎓",
         message:
-            "The vision behind VCA was to bring world-class education to Kuchaman City. We have built an institution where discipline meets innovation. Our integrated NDA, NEET, and JEE foundation programs set us apart from conventional schools. We invest in the latest smart classroom technologies and science labs to make learning experiential and result-oriented.",
+            "The vision behind VCA was to bring world-class education to Kuchaman City. We have built an institution where discipline meets innovation. Our integrated NDA, NEET, JEE, Army, Delhi Police and SSC GD foundation programs set us apart from conventional schools. We invest in smart, sound-proof digital classrooms and science labs to make learning experiential and result-oriented.",
         short:
-            "We have built an institution where discipline meets innovation, with integrated NDA, NEET, and JEE foundation programs.",
+            "We have built an institution where discipline meets innovation, with integrated defence, medical and engineering foundation programs.",
     },
     {
         id: 3,
@@ -76,36 +76,36 @@ export const facilities = [
 export const academics = [
     {
         level: "Pre-Primary",
-        classes: "Nursery – KG",
-        desc: "Play-based learning with focus on motor skills, creativity, language, and early numeracy.",
+        classes: "Play Group – Nursery – KG",
+        desc: "A joyful start to learning! Play-based activities develop motor skills, creativity, spoken language, and early numeracy. Our caring teachers ensure every child feels safe, happy, and curious.",
         icon: "🌱",
         color: "from-green-400 to-emerald-500",
     },
     {
         level: "Primary",
-        classes: "Class I – V",
-        desc: "Strong foundational academics with activity-based learning, EVS, Mathematics, and Hindi/English.",
+        classes: "Class I – V (English Medium)",
+        desc: "Strong academic foundations through activity-based learning. Core subjects — English, Hindi, Maths, EVS, and GK — taught with smart board technology and conceptual clarity methods.",
         icon: "📖",
         color: "from-blue-400 to-cyan-500",
     },
     {
         level: "Middle School",
         classes: "Class VI – VIII",
-        desc: "Comprehensive curriculum covering Science, Mathematics, Social Science with project-based assignments.",
+        desc: "Expanding horizons with Science, Mathematics, Social Science, and languages. Project-based assignments, lab exposure, and regular assessments build analytical thinking and confidence.",
         icon: "🔭",
         color: "from-indigo-400 to-blue-600",
     },
     {
         level: "Secondary",
-        classes: "Class IX – X",
-        desc: "CBSE & RBSE board preparation with regular tests, doubt sessions, and systematic exam practice.",
+        classes: "Class IX – X (CBSE & RBSE)",
+        desc: "Board exam preparation with systematic syllabus coverage, weekly tests, doubt-clearing sessions, and mock exams. Both CBSE and RBSE curriculum available with experienced subject specialists.",
         icon: "📝",
         color: "from-purple-400 to-violet-600",
     },
     {
         level: "Senior Secondary",
         classes: "Class XI – XII (Arts & Science)",
-        desc: "Specialized streams with competitive exam integration (NEET/JEE/NDA), expert faculty, and rigorous preparation.",
+        desc: "Specialized Arts and Science streams with deep subject mastery. Integrated coaching for NDA, NEET, IIT-JEE, Army, Delhi Police, SSC GD, NAVY & Air Force — all alongside board preparation.",
         icon: "🎓",
         color: "from-accent to-accent-dark",
     },
@@ -114,28 +114,62 @@ export const academics = [
 // ─── FOUNDATION PROGRAMS ─────────────────────────────
 export const foundationPrograms = [
     {
-        title: "NDA Preparation",
-        icon: "🪖",
-        desc: "Integrated military entrance preparation with Maths, GAT, physical fitness, and personality development.",
-        color: "bg-olive-100",
+        title: "NDA | NAVY | Air Force",
+        icon: "🎖️",
+        desc: "Integrated defence forces preparation — NDA, Navy & Air Force entrance coaching combined with school academics. Covers Maths, General Ability Test (GAT), English, and physical fitness guidance. Expert faculty with proven selection track record.",
+        color: "bg-green-50",
         badge: "Defence Forces",
         badgeColor: "bg-green-100 text-green-700",
     },
     {
-        title: "NEET Preparation",
+        title: "NEET | IIT-JEE",
         icon: "🩺",
-        desc: "Medical entrance coaching integrated with school curriculum — Biology, Physics, Chemistry focus.",
+        desc: "Science stream students get dual advantage — school board preparation plus dedicated NEET (Medical) and IIT-JEE (Engineering) coaching. Biology, Physics, Chemistry & advanced Maths covered by specialist teachers with 7+ years of experience.",
         color: "bg-red-50",
-        badge: "Medical",
+        badge: "Medical & Engineering",
         badgeColor: "bg-red-100 text-red-700",
     },
     {
-        title: "JEE Preparation",
-        icon: "⚙️",
-        desc: "Engineering entrance foundation with advanced Maths and Physics, problem-solving methodology.",
+        title: "Army | Delhi Police | SSC GD",
+        icon: "👮",
+        desc: "Arts stream integrated coaching for Army GD, Delhi Police Constable, and SSC GD Constable exams. Covers General Knowledge, Reasoning, Hindi/English, Maths, and physical preparation. Both English & Hindi medium available.",
         color: "bg-blue-50",
-        badge: "Engineering",
+        badge: "Government Jobs",
         badgeColor: "bg-blue-100 text-blue-700",
+    },
+];
+
+// ─── WHY CHOOSE VCA ──────────────────────────────────
+export const whyChoose = [
+    {
+        icon: "👨‍🏫",
+        title: "Experienced Faculty",
+        desc: "Teachers with a minimum of 7 years of experience, dedicated to every student's success.",
+    },
+    {
+        icon: "🌿",
+        title: "Safe & Eco-Friendly Environment",
+        desc: "Safe, disciplined, and eco-friendly campus with a strong student-teacher bond.",
+    },
+    {
+        icon: "🖥️",
+        title: "Digital & Sound-Proof Classrooms",
+        desc: "Modern sound-proof digital classrooms with smart boards for distraction-free learning.",
+    },
+    {
+        icon: "🏠",
+        title: "AC Hostel Facility",
+        desc: "Comfortable AC hostel with nutritious meals, study rooms, and 24/7 supervision.",
+    },
+    {
+        icon: "🏆",
+        title: "Competitive Exam Integration",
+        desc: "NDA, NEET, IIT-JEE, Army, Delhi Police, SSC GD, NAVY & Air Force — all under one roof.",
+    },
+    {
+        icon: "🚌",
+        title: "Transport Facility",
+        desc: "GPS-tracked buses covering Kuchaman City and surrounding areas for safe daily commute.",
     },
 ];
 

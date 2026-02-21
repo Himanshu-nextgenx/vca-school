@@ -3,7 +3,7 @@ import Hero from '../components/Hero';
 import SectionTitle from '../components/SectionTitle';
 import MessageCard from '../components/MessageCard';
 import StatsCounter from '../components/StatsCounter';
-import { stats, deskMessages, facilities, foundationPrograms, notices, academics } from '../data/schoolData';
+import { stats, deskMessages, facilities, foundationPrograms, notices, academics, whyChoose } from '../data/schoolData';
 import { FaArrowRight, FaCheckCircle, FaBell, FaFilePdf } from 'react-icons/fa';
 
 export default function Home() {
@@ -24,12 +24,12 @@ export default function Home() {
                             />
                             <ul className="space-y-3 mb-8">
                                 {[
-                                    'Established in 2026, Kuchaman City',
-                                    'Affiliated with CBSE and RBSE Boards',
-                                    'Classes from Nursery to 12th (Arts & Science)',
-                                    'Integrated NDA, NEET & JEE Foundation Programs',
-                                    'Hostel facility with 24/7 supervision',
-                                    'Located at Narayanpura, Railway Station Road',
+                                    'VCA-Kids: Play Group to Class 8th (English Medium)',
+                                    'VCA-Foundation: Arts & Science (Class 9th–12th)',
+                                    'NDA | NEET | IIT | Army | Delhi Police | NAVY | Air Force',
+                                    'Sound-proof Digital Classrooms & Experienced Faculty (7+ yrs)',
+                                    'AC Hostel with 24/7 supervision & GPS Transport',
+                                    'Located at Narayanpura, Railway Station Road, Kuchaman City',
                                 ].map((pt) => (
                                     <li key={pt} className="flex items-start gap-3">
                                         <FaCheckCircle className="text-accent flex-shrink-0 mt-0.5 text-sm" />
@@ -67,7 +67,7 @@ export default function Home() {
                         subtitle="Alongside regular academics, VCA offers dedicated foundation coaching for India's top competitive exams."
                         center
                     />
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-4">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-4">
                         {foundationPrograms.map((prog) => (
                             <div key={prog.title} className="card-base p-8 text-center group">
                                 <div className="text-5xl mb-4">{prog.icon}</div>
@@ -82,7 +82,30 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* 4. Stats Counter */}
+            {/* 4. Why Choose VCA */}
+            <section className="section-pad">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <SectionTitle
+                        tag="Why Choose Us"
+                        title="Why Choose VCA?"
+                        subtitle="From experienced teachers to sound-proof digital classrooms — everything your child deserves."
+                        center
+                    />
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+                        {whyChoose.map((item) => (
+                            <div key={item.title} className="card-base p-6 flex gap-4 items-start group hover:-translate-y-1 transition-transform duration-200">
+                                <div className="text-4xl flex-shrink-0 group-hover:scale-110 transition-transform duration-200">{item.icon}</div>
+                                <div>
+                                    <h4 className="text-base font-bold text-primary mb-1">{item.title}</h4>
+                                    <p className="text-gray-500 text-sm leading-relaxed">{item.desc}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            {/* 5. Stats Counter */}
             <StatsCounter stats={stats} />
 
             {/* 5. Facilities Preview */}
